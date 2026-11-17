@@ -1,0 +1,37 @@
+from musica import Musica
+
+class Musica:
+    def __init__(self):
+        self.musicas = []
+        self.musica_atual = None 
+        self.reproducoes = {}   
+        self.favoritos = []
+        
+        def favoritar(self):
+            if self.fav_bool == True:
+                print("A musica já está favoritada!")
+            else:
+                self.fav_bool = True
+                print("Musica favoritada!")
+
+        def desfavoritar(self):
+            if self.fav_bool == False:
+                print("A musica já está desfavoritada!")
+            else:
+                self.fav_bool = False
+                print("Musica desfavoritada!")
+
+        def reproduzir(self):
+            if self.rep_bool == False:
+                self.rep_bool = True
+                self.reproducoes+=1
+                print("Reproduzindo musica!")
+            else:
+                print("Musica já está em reprodução!")
+
+        def pausar(self):
+            if self.rep_bool == True:
+                self.rep_bool = True
+                print("Musica pausada!")
+            else:
+                print("Musica já está pausada!")
